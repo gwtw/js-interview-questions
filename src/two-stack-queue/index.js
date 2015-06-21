@@ -1,4 +1,12 @@
 /**
+ * @license
+ * js-interview-questions <http://github.com/Tyriar/js-interview-questions>
+ * Copyright 2015 Daniel Imms <http://www.growingwiththeweb.com>
+ * Released under the MIT license <http://github.com/Tyriar/js-interview-questions/blob/master/LICENSE>
+ */
+'use strict';
+
+/**
  * @constructor
  */
 function TwoStackQueue() {
@@ -8,7 +16,7 @@ function TwoStackQueue() {
 
 TwoStackQueue.prototype.push = function (value) {
   this.inbox.push(value);
-}
+};
 
 TwoStackQueue.prototype.pop = function () {
   if (!this.outbox.length) {
@@ -20,6 +28,6 @@ TwoStackQueue.prototype.pop = function () {
     }
   }
   return this.outbox.pop();
-}
+};
 
 module.exports = TwoStackQueue;

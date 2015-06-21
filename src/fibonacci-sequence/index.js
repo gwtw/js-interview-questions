@@ -14,9 +14,9 @@
 function fibonacciRecursive(n) {
   if (n < 0)
     throw 'n much be >= 0';
-  if (n == 0)
+  if (n === 0)
     return 0;
-  if (n == 1)
+  if (n === 1)
     return 1;
 
   return fibonacciRecursive(n - 1) + fibonacciRecursive(n - 2);
@@ -31,14 +31,14 @@ function fibonacciRecursive(n) {
 function fibonacciOptimised(n, map) {
   if (n < 0)
     throw 'n much be >= 0';
-  if (n == 0)
+  if (n === 0)
     return 0;
-  if (n == 1)
+  if (n === 1)
     return 1;
   if (!map)
     map = {};
   if (!map[n])
-    map[n] = fibonacciOptimised(n - 1, map) + fibonacciOptimised(n - 2, map)
+    map[n] = fibonacciOptimised(n - 1, map) + fibonacciOptimised(n - 2, map);
 
   return map[n];
 }
@@ -51,9 +51,9 @@ function fibonacciOptimised(n, map) {
 function fibonacciIterative(n) {
   if (n < 0)
     throw 'n much be >= 0';
-  if (n == 0)
+  if (n === 0)
     return 0;
-  if (n == 1)
+  if (n === 1)
     return 1;
 
   var first = 0;

@@ -24,4 +24,4 @@ function getAllCombinationsOfASet(set) {
   return results;
 }
 
-module.exports = getAllCombinationsOfASet
+module.exports = getAllCombinationsOfASet;
