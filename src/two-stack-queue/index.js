@@ -7,6 +7,7 @@
 'use strict';
 
 /**
+ * Creates a queue implemented with two stacks.
  * @constructor
  */
 function TwoStackQueue() {
@@ -14,10 +15,18 @@ function TwoStackQueue() {
   this.outbox = [];
 }
 
+/**
+ * Push a value to the queue.
+ * @param {Object} value The value to push.
+ */
 TwoStackQueue.prototype.push = function (value) {
   this.inbox.push(value);
 };
 
+/**
+ * Pops a value from the queue and returns it.
+ * @return {Object} The popped value.
+ */
 TwoStackQueue.prototype.pop = function () {
   if (!this.outbox.length) {
     if (!this.inbox.length) {
