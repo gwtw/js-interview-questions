@@ -3,6 +3,12 @@ var fibonacciOptimised = require('../src/fibonacci-sequence').fibonacciOptimised
 var fibonacciIterative = require('../src/fibonacci-sequence').fibonacciIterative;
 
 function fibonacciSequenceTests(algorithm) {
+  describe('with negative input', function () {
+    it('should throw', function () {
+      expect(algorithm.bind(undefined, -1)).toThrow();
+    });
+  });
+
   describe('with input 0', function () {
     it('should return 0', function () {
       expect(algorithm(0)).toBe(0);
