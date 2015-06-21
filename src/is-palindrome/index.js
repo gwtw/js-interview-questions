@@ -12,13 +12,13 @@
  * @returns {boolean} Whether the string is a palindrome.
  */
 function isTextPalindrome(text) {
-  if (text == null) {
+  if (text === undefined) {
     return false;
   }
   var left = 0;
   var right = text.length - 1;
   while (left < right) {
-    if (text[left++] != text[right--]) {
+    if (text[left++] !== text[right--]) {
       return false;
     }
   }
