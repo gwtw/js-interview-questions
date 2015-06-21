@@ -8,9 +8,14 @@ addons:
   code_climate:
     repo_token: 28cf64c87da0b29047a4d4746f30091d99a7b98377d173fb4e8a5f5a4c8b9226
 
-after_script:
+before_install:
   - npm install -g grunt-cli
+
+install:
+  - npm install
   - grunt
+
+after_script:
   - npm install -g codeclimate-test-reporter
   - grunt coverage
   - cat coverage/lcov.info | codeclimate
