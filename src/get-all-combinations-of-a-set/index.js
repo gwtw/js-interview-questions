@@ -11,7 +11,7 @@
  * @param {String|Array} set The set to extract combinations from.
  * @returns {Array} The resulting combinations.
  */
-module.exports = function (set) {
+function getAllCombinationsOfASet(set) {
   var results = [];
   for (var i = 0; i < set.length; i++) {
     // Record size as the list will change
@@ -23,3 +23,5 @@ module.exports = function (set) {
   }
   return results;
 }
+
+module.exports = getAllCombinationsOfASet

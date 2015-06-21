@@ -12,7 +12,7 @@
  * @param {integer} b The denominator.
  * @returns {integer} The result of a / b.
  */
-module.exports = function (a, b) {
+function integerDivideWithoutDivide(a, b) {
   if (b === 0) {
     throw 'Division by zero is undefined: ' + a + '/' + b;
   }
@@ -31,4 +31,6 @@ module.exports = function (a, b) {
     result++;
   }
   return (result - 1) * sign;
-};
+}
+
+module.exports = integerDivideWithoutDivide;
