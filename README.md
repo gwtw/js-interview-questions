@@ -22,19 +22,12 @@ grunt coverage
 
 ## License
 
-MIT © [Daniel Imms][GWTW]
+MIT © [Daniel Imms](http://www.growingwiththeweb.com)
 
 
 
 ## See also
 
-* [Tyriar/js-data-structures][1]
-* [Tyriar/js-design-patterns][2]
-* [Tyriar/js-sorting][3]
-
-
-
-[GWTW]: http://www.growingwiththeweb.com
-[1]: https://github.com/Tyriar/js-data-structures
-[2]: https://github.com/Tyriar/js-design-patterns
-[3]: https://github.com/Tyriar/js-sorting
+* [js-data-structures](https://github.com/Tyriar/js-data-structures)
+* [js-design-patterns](https://github.com/Tyriar/js-design-patterns)
+* [js-sorting](https://github.com/Tyriar/js-sorting)
