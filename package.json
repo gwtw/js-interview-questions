@@ -1,0 +1,30 @@
+{
+  "name": "js-interview-questions",
+  "version": "0.1.0",
+  "description": "A collection of interview question answers written in JavaScript",
+  "scripts": {
+    "test": "jasmine-node ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Tyriar/js-interview-questions.git"
+  },
+  "keywords": [
+    "interview question",
+    "computer science",
+    "software engineering"
+  ],
+  "author": "Daniel Imms (http://www.growingwiththeweb.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Tyriar/js-interview-questions/issues"
+  },
+  "homepage": "https://github.com/Tyriar/js-interview-questions",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-eslint": "^12.0.0",
+    "grunt-jasmine-node-coverage": "^0.4.1",
+    "jasmine-node": "^1.14.3",
+    "jasmine-reporters": ">=0.2.0 <2.0.0"
+  }
+}
