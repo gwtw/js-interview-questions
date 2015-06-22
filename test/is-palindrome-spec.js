@@ -4,6 +4,10 @@ var isPhrasePalindrome = require('../src/is-palindrome').isPhrasePalindrome;
 describe('isTextPalindrome', function () {
   'use strict';
 
+  it('should throw whenreturn false when the input is undefined', function () {
+    expect(isTextPalindrome()).toBe(false);
+  });
+
   it('should return true for palindromes', function () {
     expect(isTextPalindrome('')).toBe(true);
     expect(isTextPalindrome('a')).toBe(true);
