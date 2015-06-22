@@ -32,7 +32,6 @@ function isTextPalindrome(text) {
  */
 function isPhrasePalindrome(text) {
   var chars = text.replace(/[^a-zA-Z]/g, '').toLowerCase();
-  console.log(chars);
   return isTextPalindrome(chars);
 }
 

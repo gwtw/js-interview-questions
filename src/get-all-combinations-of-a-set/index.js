@@ -7,19 +7,19 @@
 'use strict';
 
 /**
- * Get all combinations of a set.
- * @param {String|Array} set The set to extract combinations from.
+ * Get all combinations of characters in a string.
+ * @param {String} text The text to extract combinations from.
  * @returns {Array} The resulting combinations.
  */
-function getAllCombinationsOfASet(set) {
+function getAllCombinationsOfASet(text) {
   var results = [];
-  for (var i = 0; i < set.length; i++) {
+  for (var i = 0; i < text.length; i++) {
     // Record size as the list will change
     var resultsLength = results.length;
     for (var j = 0; j < resultsLength; j++) {
-      results.push(set[i] + results[j]);
+      results.push(text[i] + results[j]);
     }
-    results.push(set[i]);
+    results.push(text[i]);
   }
   return results;
 }
