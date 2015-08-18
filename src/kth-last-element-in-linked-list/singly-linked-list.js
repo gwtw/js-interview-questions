@@ -31,7 +31,6 @@ function getKthLastElement(head, k) {
 
   var current = head;
   var nBehindCurrent = head;
-  var countBehindCurrent = 0;
 
   for (var i = 0; i < k - 1; i++) {
     current = current.next;
