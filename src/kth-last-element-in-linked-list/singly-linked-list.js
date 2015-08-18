@@ -18,14 +18,14 @@ function SinglyLinkedList(data, next) {
 }
 
 /**
- * Gets the nth last element of a {@link SinglyLinkedList}.
+ * Gets the kth last element of a {@link SinglyLinkedList}.
  * @param {SinglyLinkedList} head The head of the list.
- * @param {SinglyLinkedList} n The number of elements to count backward.
- * @returns The nth last element of the linked list, if it is not large enough,
+ * @param {SinglyLinkedList} k The number of elements to count backward.
+ * @returns The kth last element of the linked list, if it is not large enough,
  * return 0
  */
-function getNthLastElement(head, n) {
-  if (!head || n < 1) {
+function getKthLastElement(head, k) {
+  if (!head || k < 1) {
     return undefined;
   }
 
@@ -33,7 +33,7 @@ function getNthLastElement(head, n) {
   var nBehindCurrent = head;
   var countBehindCurrent = 0;
 
-  for (var i = 0; i < n - 1; i++) {
+  for (var i = 0; i < k - 1; i++) {
     current = current.next;
     if (!current) {
       return undefined;
@@ -50,5 +50,5 @@ function getNthLastElement(head, n) {
 
 module.exports = {
   SinglyLinkedList: SinglyLinkedList,
-  getNthLastElement: getNthLastElement
+  getKthLastElement: getKthLastElement
 };
