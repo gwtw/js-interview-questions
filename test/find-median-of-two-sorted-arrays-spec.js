@@ -61,6 +61,7 @@ describe('findMedian', function () {
       expect(findMedian([1, 2, 3, 4, 5, 6, 7, 8], [1, 2, 3])).toBe(3);
       expect(findMedian([1, 2, 3, 4, 5, 6, 7, 8, 9, 10], [2, 3])).toBe(4.5);
       expect(findMedian([1, 2, 3, 4, 5, 6, 7, 8, 9], [2, 3])).toBe(4);
+      expect(findMedian([1, 2, 3, 4, 6, 7, 8, 9], [5])).toBe(5);
     });
   });
 
@@ -73,6 +74,7 @@ describe('findMedian', function () {
       expect(findMedian([1, 2, 3], [1, 2, 3, 4, 5, 6, 7, 8])).toBe(3);
       expect(findMedian([2, 3], [1, 2, 3, 4, 5, 6, 7, 8, 9, 10])).toBe(4.5);
       expect(findMedian([2, 3], [1, 2, 3, 4, 5, 6, 7, 8, 9])).toBe(4);
+      expect(findMedian([5], [1, 2, 3, 4, 6, 7, 8, 9])).toBe(5);
     });
   });
 });
