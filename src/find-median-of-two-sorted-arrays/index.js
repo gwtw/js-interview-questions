@@ -21,6 +21,57 @@ function medianOfArray(array) {
 }
 
 /**
+ * Binary searches an array, returning the index of the array in which the
+ * specified value should be inserted.
+ *
+ * @param {number[]} array The value being searched.
+ * @param {number} value The value being inserted.
+ * @return The index where value can be inserted
+ */
+function binarySearch(array, value) {
+  if (array.length === 0) {
+    return 0;
+  }
+  if (value <= array[0]) {
+    return 0;
+  }
+  if (value >= array[array.length - 1]) {
+    return array.length - 1;
+  }
+  var low = 0;
+  var high = array.length - 1;
+  while (low <= high) {
+    var mid = Math.floor((high + low) / 2);
+    if (array[mid] === value) {
+      return mid;
+    }
+    if (array[mid] > value) {
+      high = mid - 1;
+      if (high < low) {
+        return mid;
+      }
+    } else {
+      low = mid + 1;
+      if (low > high) {
+        return mid + 1;
+      }
+    }
+  }
+  return undefined;
+}
+
+/**
+ * Binary searches an array, inserting the specified value in sorted order.
+ *
+ * @param {number[]} array The value being searched.
+ * @param {number} value The value being inserted.
+ */
+function binarySearchInsert(array, value) {
+  var index = binarySearch(array, value);
+  array.splice(index, 0, value);
+}
+
+/**
  * Gets the median of two sorted arrays.
  *
  * @param {number[]} A The first sorted array.
@@ -31,14 +82,22 @@ function findMedian(A, B) {
   if (A.length === 0 && B.length === 0) {
     return undefined;
   }
+  if (A.length === 1 && B.length === 1) {
+    return (A[0] + B[0]) / 2;
+  }
+  if (A.length === 1 && B.length > 1) {
+    binarySearchInsert(B, A[0]);
+    A.length = 0;
+  }
+  if (B.length === 1 && A.length > 1) {
+    binarySearchInsert(A, B[0]);
+    B.length = 0;
+  }
   if (A.length === 0) {
     return medianOfArray(B);
   }
   if (B.length === 0) {
     return medianOfArray(A);
-  }
-  if (A.length === 1 && B.length === 1) {
-    return (A[0] + B[0]) / 2;
   }
 
   var medianA = medianOfArray(A);
