@@ -49,6 +49,8 @@ describe('findMedian', function () {
       expect(findMedian([1, 2, 3, 4], [6, 7, 8, 9])).toBe(5);
       expect(findMedian([1, 2, 3, 4], [7, 8, 9, 10])).toBe(5.5);
       expect(findMedian([1, 1, 1, 1], [1, 1, 1, 1])).toBe(1);
+      expect(findMedian([1, 2, 3, 4, 5], [2, 3, 4, 5, 6])).toBe(3.5);
+      expect(findMedian([-1, 0, 1, 2, 5], [2, 3, 4, 5, 6])).toBe(2.5);
     });
   });
 
