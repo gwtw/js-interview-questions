@@ -73,7 +73,7 @@ function findMedianOfArrayAndValueOddCase(array, arrayMedian, value) {
  */
 function findMedianOfArrayAndValue(array, value) {
   var arrayMedian = medianOfArray(array);
-  if (arrayMedian == value) {
+  if (arrayMedian === value) {
     return arrayMedian;
   }
   if (array.length % 2 === 0) {
