@@ -94,4 +94,42 @@ describe('findMedian', function () {
       });
     });
   });
+
+  describe('findMedianOfArrayAndValue', function () {
+    it('should handle value < array left value', function () {
+      expect(findMedian([-1], [1, 4, 7])).toBe(2.5);
+      expect(findMedian([0], [1, 4, 7])).toBe(2.5);
+      expect(findMedian([1, 4, 7], [-1])).toBe(2.5);
+      expect(findMedian([1, 4, 7], [0])).toBe(2.5);
+    });
+
+    it('should handle value > array left value && value < array mid value', function () {
+      expect(findMedian([2], [1, 4, 7])).toBe(3);
+      expect(findMedian([3], [1, 4, 7])).toBe(3.5);
+      expect(findMedian([1, 4, 7], [2])).toBe(3);
+      expect(findMedian([1, 4, 7], [3])).toBe(3.5);
+    });
+
+    it('should handle value == array mid value', function () {
+      expect(findMedian([4], [1, 4, 7])).toBe(4);
+      expect(findMedian([4], [1, 4, 7])).toBe(4);
+      expect(findMedian([1, 4, 7], [4])).toBe(4);
+      expect(findMedian([1, 4, 7], [4])).toBe(4);
+    });
+
+    it('should handle value < array right value && value > array mid value', function () {
+      expect(findMedian([5], [1, 4, 7])).toBe(4.5);
+      expect(findMedian([6], [1, 4, 7])).toBe(5);
+      expect(findMedian([1, 4, 7], [5])).toBe(4.5);
+      expect(findMedian([1, 4, 7], [6])).toBe(5);
+    });
+
+    it('should handle value > array right value', function () {
+      expect(findMedian([8], [1, 4, 7])).toBe(5.5);
+      expect(findMedian([9], [1, 4, 7])).toBe(5.5);
+      expect(findMedian([1, 4, 7], [8])).toBe(5.5);
+      expect(findMedian([1, 4, 7], [9])).toBe(5.5);
+    });
+
+  });
 });
