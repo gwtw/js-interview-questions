@@ -24,7 +24,7 @@ function SinglyLinkedList(data, next) {
  * @param {SinglyLinkedList} head The head of the list.
  * @param {number} k The number of elements to count backward.
  * @returns The kth last element of the linked list, if it is not large enough,
- * return 0
+ * return 0.
  */
 function getKthLastElement(head, k) {
   if (!head || k < 1) {
