@@ -22,7 +22,7 @@ function SinglyLinkedList(data, next) {
  * Gets the kth last element of a {@link SinglyLinkedList}.
  *
  * @param {SinglyLinkedList} head The head of the list.
- * @param {SinglyLinkedList} k The number of elements to count backward.
+ * @param {number} k The number of elements to count backward.
  * @returns The kth last element of the linked list, if it is not large enough,
  * return 0
  */
