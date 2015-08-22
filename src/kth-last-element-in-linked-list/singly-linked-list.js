@@ -8,6 +8,7 @@
 
 /**
  * Creates a singly linked list node.
+ *
  * @constructor
  * @param {Object} data The data associated with this node.
  * @param {SinglyLinkedList} next The next node in the linked list.
@@ -19,6 +20,7 @@ function SinglyLinkedList(data, next) {
 
 /**
  * Gets the kth last element of a {@link SinglyLinkedList}.
+ *
  * @param {SinglyLinkedList} head The head of the list.
  * @param {SinglyLinkedList} k The number of elements to count backward.
  * @returns The kth last element of the linked list, if it is not large enough,

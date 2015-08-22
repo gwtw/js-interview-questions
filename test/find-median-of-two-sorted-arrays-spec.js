@@ -130,6 +130,5 @@ describe('findMedian', function () {
       expect(findMedian([1, 4, 7], [8])).toBe(5.5);
       expect(findMedian([1, 4, 7], [9])).toBe(5.5);
     });
-
   });
 });
