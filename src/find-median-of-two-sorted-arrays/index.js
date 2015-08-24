@@ -10,7 +10,7 @@
  * Gets the median of a single sorted array.
  *
  * @param {number[]} array The sorted array to get the median of.
- * @return {number}The median of the array.
+ * @return {number} The median of the array.
  */
 function medianOfArray(array) {
   var mid = Math.floor(array.length / 2);
