@@ -1,4 +1,5 @@
 /**
+ * @module src/get-all-combinations-of-a-set
  * @license
  * js-interview-questions <http://github.com/Tyriar/js-interview-questions>
  * Copyright 2015 Daniel Imms <http://www.growingwiththeweb.com>

@@ -1,4 +1,5 @@
 /**
+ * @module src/reverse-a-linked-list/doubly-linked-list
  * @license
  * js-interview-questions <http://github.com/Tyriar/js-interview-questions>
  * Copyright 2015 Daniel Imms <http://www.growingwiththeweb.com>
