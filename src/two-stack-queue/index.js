@@ -1,9 +1,6 @@
 /**
  * @module src/two-stack-queue
- * @license
- * js-interview-questions <http://github.com/Tyriar/js-interview-questions>
- * Copyright 2015 Daniel Imms <http://www.growingwiththeweb.com>
- * Released under the MIT license <http://github.com/Tyriar/js-interview-questions/blob/master/LICENSE>
+ * @license MIT Copyright 2015 Daniel Imms (http://www.growingwiththeweb.com)
  */
 'use strict';
 
