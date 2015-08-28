@@ -10,12 +10,11 @@ addons:
 
 before_install:
   - npm install -g grunt-cli
+  - npm install -g codeclimate-test-reporter
 
 install:
   - npm install
   - grunt
 
 after_script:
-  - npm install -g codeclimate-test-reporter
-  - grunt coverage
   - cat coverage/lcov.info | codeclimate
