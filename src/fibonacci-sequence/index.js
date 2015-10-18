@@ -11,7 +11,7 @@
  */
 function fibonacciRecursive(n) {
   if (n < 0)
-    throw 'n much be >= 0';
+    throw 'n must be >= 0';
   if (n === 0)
     return 0;
   if (n === 1)
@@ -28,7 +28,7 @@ function fibonacciRecursive(n) {
  */
 function fibonacciOptimised(n, map) {
   if (n < 0)
-    throw 'n much be >= 0';
+    throw 'n must be >= 0';
   if (n === 0)
     return 0;
   if (n === 1)
@@ -48,7 +48,7 @@ function fibonacciOptimised(n, map) {
  */
 function fibonacciIterative(n) {
   if (n < 0)
-    throw 'n much be >= 0';
+    throw 'n must be >= 0';
   if (n === 0)
     return 0;
   if (n === 1)
