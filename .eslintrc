@@ -3,7 +3,6 @@
     'node': true
   },
   'rules': {
-    'quotes': [1, 'single'],
-    'curly': false // Excluding is nicer for certain algorithms
+    'quotes': [1, 'single']
   }
 }
