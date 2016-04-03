@@ -11,8 +11,8 @@
  */
 function reverseString(text) {
   var result = '';
-  for (var i = 0; i < text.length; i++) {
-    result += text[text.length - 1 - i];
+  for (var i = text.length - 1; i >= 0; i--) {
+    result += text[i];
   }
   return result;
 }
