@@ -98,6 +98,7 @@ describe('findMedian', function () {
   describe('given two large arrays', function () {
     it('should handle the case when one array is trimmed to two values which are the median and the other array contains more', function () {
       expect(findMedian([-50, -47, -36, -35, 0, 13, 14, 16], [-31, 1, 9, 23, 30, 39])).toBe(5);
+      expect(findMedian([-47, -36, -35, 0, 13, 14], [-31, 1, 9, 23, 30, 39])).toBe(5);
     });
   });
 
