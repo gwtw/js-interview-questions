@@ -82,7 +82,7 @@ function findMedianOfArrayAndValue(array, value) {
 
 /**
  * Gets whether two values belong in sorted order in the middle of an array.
- * 
+ *
  * @param {number[]} array The sorted array.
  * @param {number} small The smaller number.
  * @param {number} large The larger number.
@@ -121,12 +121,12 @@ function findMedian(A, B) {
   }
   if (A.length === 2 && B.length >= 2 && B.length % 2 === 0) {
     if (areValuesInMiddleOfEvenArray(B, A[0], A[1])) {
-      return (A[0] + A[1]) / 2; 
+      return (A[0] + A[1]) / 2;
     }
   }
   if (B.length === 2 && A.length >= 2 && A.length % 2 === 0) {
     if (areValuesInMiddleOfEvenArray(A, B[0], B[1])) {
-      return (B[0] + B[1]) / 2; 
+      return (B[0] + B[1]) / 2;
     }
   }
 
