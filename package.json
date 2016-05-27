@@ -1,6 +1,6 @@
 {
   "name": "js-interview-questions",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "A collection of interview question answers written in JavaScript",
   "scripts": {
     "test": "jasmine-node ."
