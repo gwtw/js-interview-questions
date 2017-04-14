@@ -80,4 +80,21 @@ describe('MaxAwareStackOptimised', function () {
     stack.pop();
     expect(stack.max()).toBe(undefined);
   });
+
+  it('should work with duplicate values', function () {
+    var stack = new MaxAwareStackOptimised();
+    stack.push(1);
+    stack.push(1);
+    stack.push(2);
+    stack.push(2);
+    expect(stack.max()).toBe(2);
+    stack.pop();
+    expect(stack.max()).toBe(2);
+    stack.pop();
+    expect(stack.max()).toBe(1);
+    stack.pop();
+    expect(stack.max()).toBe(1);
+    stack.pop();
+    expect(stack.max()).toBe(undefined);
+  });
 });

@@ -5,8 +5,7 @@
 'use strict';
 
 /**
- * Creates a stack that is aware of its maximum value in constant time. This
- * implementation is optimised for space but requires all values to be unique.
+ * Creates a stack that is aware of its maximum value in constant time.
  */
 function MaxAwareStackOptimised() {
   this.valueStack = [];
@@ -18,7 +17,7 @@ function MaxAwareStackOptimised() {
  * @param {*} value The value to push.
  */
 MaxAwareStackOptimised.prototype.push = function (value) {
-  if (this.maxStack.length === 0 || this.max() < value) {
+  if (this.maxStack.length === 0 || this.max() <= value) {
     this.maxStack.push(value);
   }
   this.valueStack.push(value);
