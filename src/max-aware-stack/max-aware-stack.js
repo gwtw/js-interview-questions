@@ -1,5 +1,5 @@
 /**
- * @module src/max-aware-stack
+ * @module src/max-aware-stack/max-aware-stack
  * @license MIT Copyright 2017 Daniel Imms (http://www.growingwiththeweb.com)
  */
 'use strict';

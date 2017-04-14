@@ -1,10 +1,10 @@
 'use strict';
 
-var MaxAwareStack = require('../src/max-aware-stack/max-aware-stack');
+var MaxAwareStackOptimised = require('../src/max-aware-stack/max-aware-stack-optimised');
 
-describe('MaxAwareStack', function () {
+describe('MaxAwareStackOptimised', function () {
   it('should return undefined when calling pop() on an empty stack', function () {
-    var stack = new MaxAwareStack();
+    var stack = new MaxAwareStackOptimised();
     expect(stack.pop()).toBe(undefined);
     stack.push(1);
     stack.pop();
@@ -12,13 +12,13 @@ describe('MaxAwareStack', function () {
   });
 
   it('should push and pop 1 element', function () {
-    var stack = new MaxAwareStack();
+    var stack = new MaxAwareStackOptimised();
     stack.push(1);
     expect(stack.pop()).toBe(1);
   });
 
   it('should push and pop 2 elements', function () {
-    var stack = new MaxAwareStack();
+    var stack = new MaxAwareStackOptimised();
     stack.push(1);
     stack.push(2);
     expect(stack.pop()).toBe(2);
@@ -26,7 +26,7 @@ describe('MaxAwareStack', function () {
   });
 
   it('should push and pop 3 element', function () {
-    var stack = new MaxAwareStack();
+    var stack = new MaxAwareStackOptimised();
     stack.push(1);
     stack.push(2);
     stack.push(3);
@@ -36,7 +36,7 @@ describe('MaxAwareStack', function () {
   });
 
   it('should push and pop in shuffled order', function () {
-    var stack = new MaxAwareStack();
+    var stack = new MaxAwareStackOptimised();
     stack.push(1);
     stack.push(2);
     expect(stack.pop()).toBe(2);
@@ -50,7 +50,7 @@ describe('MaxAwareStack', function () {
   });
 
   it('should return undefined as the maximum on an empty stack', function () {
-    var stack = new MaxAwareStack();
+    var stack = new MaxAwareStackOptimised();
     expect(stack.max()).toBe(undefined);
     stack.push(1);
     stack.pop();
@@ -58,7 +58,7 @@ describe('MaxAwareStack', function () {
   });
 
   it('should return the maximum when values are pushed', function () {
-    var stack = new MaxAwareStack();
+    var stack = new MaxAwareStackOptimised();
     stack.push(1);
     expect(stack.max()).toBe(1);
     stack.push(3);
@@ -68,7 +68,7 @@ describe('MaxAwareStack', function () {
   });
 
   it('should record the maximum when values are popped', function () {
-    var stack = new MaxAwareStack();
+    var stack = new MaxAwareStackOptimised();
     stack.push(1);
     stack.push(3);
     stack.push(2);
