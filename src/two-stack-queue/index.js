@@ -15,7 +15,7 @@ function TwoStackQueue() {
 
 /**
  * Push a value to the queue.
- * @param {Object} value The value to push.
+ * @param {*} value The value to push.
  */
 TwoStackQueue.prototype.push = function (value) {
   this.inbox.push(value);
@@ -23,7 +23,7 @@ TwoStackQueue.prototype.push = function (value) {
 
 /**
  * Pops a value from the queue and returns it.
- * @return {Object} The popped value.
+ * @return {*} The popped value.
  */
 TwoStackQueue.prototype.pop = function () {
   if (!this.outbox.length) {
